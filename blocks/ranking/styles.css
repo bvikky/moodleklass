@@ -1,0 +1,108 @@
+.block_ranking {
+	padding: 0 0 15px;
+	margin-bottom: 30px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	border: 1px solid #DEDEDE;
+	border-radius: 8px;
+	opacity: 1;
+}
+.block_ranking h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 15px 0 0 30px;
+    background-color: #edeff7;
+    margin: 0;
+	border-radius: 8px;
+}
+.ranking-table-tabs
+{
+	padding:0 10px 0 10px;
+}
+.block_ranking .rankingTable tr.itsme {
+	display:none;
+}
+.block_ranking #ranking-tabs ul {
+	padding:10px 13px 0px 10px;
+	display:inline-flex;
+	background-color: #edeff7;
+}
+.block_ranking .yui3-tabview-panel{
+	padding:0;
+	background:#ffffff;
+	border: none;
+}
+.block_ranking .rank-table{
+	padding:5px 10px 0 10px;
+}
+.block_ranking #ranking-tabs .yui3-tab-label{
+	background: none; 
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 15px;
+	font-weight: 400;
+	border-radius: 25px;
+    text-decoration: none;
+}
+.block_ranking .ranking-user
+{
+	    background-color: #edeff7;
+		padding: 10px;
+		margin-bottom: 5px;
+}
+.block_ranking .ranking-user .userimage
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.block_ranking #ranking-tabs .yui3-tabview-list
+{
+	border:none;
+}
+.block_ranking #ranking-tabs .yui3-tab
+{
+	margin: 0;
+    padding: 0px 5px 5px 5px;
+}
+.block_ranking #ranking-tabs .yui3-tab-label:hover
+{
+	background: none;
+}
+	
+.block_ranking #ranking-tabs ul li button {
+    background-color: #fff;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-radius: 4px 4px 0 0;
+    padding: 7px 12px;
+}
+
+.block_ranking #ranking-tabs ul .yui3-tab-selected .yui3-tab-label {
+    background: #f48120;
+    border-color: #f48120;
+	padding: 0.3em 0.75em;
+}
+
+.ranking-report .groupselector {
+    text-align: center;
+    display: block;
+}
+
+.block_ranking .content .footer {
+    margin-top: 10px;
+    text-align: center;
+}
+.block_ranking .user-details{
+	text-align: center;
+}
+.block_ranking .rank-details{
+	margin:0;
+}
+.ranklink{
+	color: #007BFF;
+	padding-left: 10px;
+}
