@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A page to display a list of ratings for a given item (forum post etc)
+ * 
  *
  * @package    core_rating
  * @category   rating
