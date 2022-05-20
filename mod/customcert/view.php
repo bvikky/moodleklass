@@ -146,7 +146,7 @@ if (!$downloadown && !$downloadissue) {
     }
 
     // Output all the page data.
-    echo $OUTPUT->header();
+   // echo $OUTPUT->header();
     echo $OUTPUT->heading(format_string($customcert->name));
     echo $intro;
     echo $issuehtml;
