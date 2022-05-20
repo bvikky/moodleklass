@@ -155,7 +155,7 @@ if (!$downloadown && !$downloadissue) {
         $numissues = \mod_customcert\certificate::get_number_of_issues($customcert->id, $cm, $groupmode);
         echo $OUTPUT->heading(get_string('listofissues', 'customcert', $numissues), 3);
         groups_print_activity_menu($cm, $pageurl);
-        echo $reporttable->out($perpage, false);
+       // echo $reporttable->out($perpage, false);
     }
    // echo $OUTPUT->footer($course);
     exit();
