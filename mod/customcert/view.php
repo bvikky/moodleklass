@@ -157,7 +157,7 @@ if (!$downloadown && !$downloadissue) {
         groups_print_activity_menu($cm, $pageurl);
         echo $reporttable->out($perpage, false);
     }
-    echo $OUTPUT->footer($course);
+   // echo $OUTPUT->footer($course);
     exit();
 } else if ($canreceive || $canmanage) { // Output to pdf.
     // Set the userid value of who we are downloading the certificate for.
