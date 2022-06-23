@@ -65,6 +65,7 @@ if (!empty($sessions)) {
         $row[] = $meet['topic'];
         $row[] = $meet['starttime'];
         $row[] = $meet['endtime'];
+        //$row[] = $meet['duration'];
         $row[] = $meet['duration'];
 
         if ($meet['count'] > 0) {

@@ -471,4 +471,4 @@ if ($config->showallmeetings != ZOOM_ALLMEETINGS_DISABLE) {
 }
 
 // Finish the page.
-echo $OUTPUT->footer();
+//echo $OUTPUT->footer();
