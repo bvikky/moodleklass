@@ -66,7 +66,7 @@ if ($id) {
 
 } else {
     require_login();
-    print_error('needcourseid');
+    //print_error('needcourseid');
 }
 
 // Set up the page.
