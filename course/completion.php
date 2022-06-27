@@ -84,7 +84,7 @@ if ($form->is_cancelled()){
 
 } else if ($data = $form->get_data()) {
     $completion = new completion_info($course);
-
+   $completion =$DB-> get_records_sql("SELECT rating mdl_block_rate_course where course=$COURSE->id");
     // Process criteria unlocking if requested.
     if (!empty($data->settingsunlock)) {
         $completion->delete_course_completion_data();
