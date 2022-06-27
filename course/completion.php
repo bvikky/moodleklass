@@ -77,7 +77,7 @@ $PAGE->set_heading($course->fullname);
 $PAGE->set_pagelayout('admin');
 
 // Create the settings form instance.
-$form = new course_completion_form('completion.php?id='.$id, array('course' => $course));
+//$form = new course_completion_form('completion.php?id='.$id, array('course' => $course));
 
 if ($form->is_cancelled()){
     redirect($CFG->wwwroot.'/course/view.php?id='.$course->id);
