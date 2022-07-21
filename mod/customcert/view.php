@@ -146,8 +146,8 @@ if (!$downloadown && !$downloadissue) {
     }
 
     // Output all the page data.
-    echo $OUTPUT->header();
-    echo $OUTPUT->heading(format_string($customcert->name));
+   // echo $OUTPUT->header();
+    //echo $OUTPUT->heading(format_string($customcert->name));
     echo $intro;
     echo $issuehtml;
     echo $downloadbutton;
@@ -155,9 +155,9 @@ if (!$downloadown && !$downloadissue) {
         $numissues = \mod_customcert\certificate::get_number_of_issues($customcert->id, $cm, $groupmode);
         echo $OUTPUT->heading(get_string('listofissues', 'customcert', $numissues), 3);
         groups_print_activity_menu($cm, $pageurl);
-        echo $reporttable->out($perpage, false);
+       // echo $reporttable->out($perpage, false);
     }
-    echo $OUTPUT->footer($course);
+   // echo $OUTPUT->footer($course);
     exit();
 } else if ($canreceive || $canmanage) { // Output to pdf.
     // Set the userid value of who we are downloading the certificate for.
