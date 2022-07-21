@@ -66,7 +66,7 @@ if ($id) {
 
 } else {
     require_login();
-    //print_error('needcourseid');
+    print_error('needcourseid');
 }
 
 // Set up the page.
@@ -77,14 +77,14 @@ $PAGE->set_heading($course->fullname);
 $PAGE->set_pagelayout('admin');
 
 // Create the settings form instance.
-//$form = new course_completion_form('completion.php?id='.$id, array('course' => $course));
+$form = new course_completion_form('completion.php?id='.$id, array('course' => $course));
 
 if ($form->is_cancelled()){
     redirect($CFG->wwwroot.'/course/view.php?id='.$course->id);
 
 } else if ($data = $form->get_data()) {
     $completion = new completion_info($course);
-   $completion =$DB-> get_records_sql("SELECT rating mdl_block_rate_course where course=$COURSE->id");
+
     // Process criteria unlocking if requested.
     if (!empty($data->settingsunlock)) {
         $completion->delete_course_completion_data();

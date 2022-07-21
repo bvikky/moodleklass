@@ -66,13 +66,7 @@ if ($confirm && confirm_sesskey()) {
             }
         }
     }
-    global $DB,$SESSION;
-			$company=$SESSION->currenteditingcompany;
- $company=$DB->get_records_sql('customcert_template', array('companyid=>$company'));
- foreach( $company as $cid){
 
-    $cname=$cid->name;
- }
     // Delete the pages.
     $DB->delete_records('customcert_pages', array('templateid' => $template->get_id()));
 
